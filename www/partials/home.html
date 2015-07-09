@@ -1,0 +1,61 @@
+<ion-view view-title="Historias">
+	<ion-content class="padding">
+		<div class="list card">
+
+		 <!--  <div class="item item-avatar">
+		    <img src="img/perfil.jpg">
+		    <h2>Elkin Urango</h2>
+		    <p>Julio 08, 2015</p>
+		  </div> -->
+
+		  <!-- CUERPO HISTORIA -->
+		  <div class="item item-body">
+		  	<!-- <h2>Mi historia</h2> -->
+		    <!-- <img class="full-image" src="img/test.jpg"> -->
+		    <p>
+		      This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
+		      the content is from a card-body consisting of an image and paragraph text. The footer
+		      consists of tabs, icons aligned left, within the card-footer.
+		    </p>
+		    <p>
+		      <a class="subdued">{{like}} Like</a>
+		      <a href="#" class="subdued">5 Comments</a>
+		      <a href="#" class="subdued">10 Share</a>
+		    </p>
+		  </div>
+		  <!-- FIN CUERPO HISTORIA -->
+
+		  <!-- BOTONERA SOCIAL -->
+		  <div class="item tabs tabs-secondary tabs-icon-left">
+		    <a class="tab-item" ng-click="likeNew()">
+		      <i class="icon icon-social ion-thumbsup"></i>
+		      Like
+		    </a>
+		    <a class="tab-item" ng-click="showComments()">
+		      <i class="icon icon-social ion-ios-chatboxes-outline"></i>
+		      Comment
+		    </a>
+		    <a class="tab-item" href="#">
+		      <i class="icon icon-social ion-share"></i>
+		      Share
+		    </a>
+		  </div>
+		  <!-- FIN BOTONERA SOCIAL -->
+
+		  <!-- COMMENTS -->
+		  <div class="item item-body" ng-show="showComment">
+		  	<!-- <h2>Mi historia</h2> -->
+		    <!-- <img class="full-image" src="img/test.jpg"> -->
+		    <p>
+		      This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
+		      the content is from a card-body consisting of an image and paragraph text.
+		    </p>
+		     <p>
+		      This is a "Facebook" styled Card. The header is created from a Thumbnail List item.
+		    </p>
+		  </div>
+		  <!-- FIN COMMENTS -->
+
+		</div>
+	</ion-content>
+</ion-view>

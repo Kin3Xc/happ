@@ -1,0 +1,30 @@
+body{
+	font-size: 16px;
+	color: #7f8c8d;
+	background-color: #ecf0f1 !important;
+}
+.title{
+	color: #FFF !important;
+	font-size: 1.5em !important;
+}
+.bar-stable{
+	background-color: #e74c3c !important;
+}
+.btn-new{
+	float: right;
+}
+.icon-new{
+	font-size: 32px;
+	color: #FFF !important;
+}
+.icon-social{
+	color: #e74c3c;
+}
+.list{
+	margin-top: 0 !important;
+	margin-bottom: 16px !important;
+	padding-top: 0 !important;
+}
+.back{
+	color:#FFF !important;
+}
