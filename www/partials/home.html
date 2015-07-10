@@ -1,6 +1,6 @@
-<ion-view view-title="Historias">
+<ion-view view-title="Historias" ng-controller="HomeCtrl">
 	<ion-content class="padding">
-		<div class="list card">
+		<div class="list card" ng-repeat="data in historias">
 
 		 <!--  <div class="item item-avatar">
 		    <img src="img/perfil.jpg">
@@ -13,10 +13,9 @@
 		  	<!-- <h2>Mi historia</h2> -->
 		    <!-- <img class="full-image" src="img/test.jpg"> -->
 		    <p>
-		      This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
-		      the content is from a card-body consisting of an image and paragraph text. The footer
-		      consists of tabs, icons aligned left, within the card-footer.
+		    	{{data.history}}
 		    </p>
+		    
 		    <p>
 		      <a class="subdued">{{like}} Like</a>
 		      <a href="#" class="subdued">5 Comments</a>

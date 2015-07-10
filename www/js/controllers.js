@@ -1,15 +1,16 @@
 angular.module('happ.controllers', [])
 	
 //Controllador para cargar todo el home (historias)
-.controller('HomeCtrl', function($scope, $location, $ionicHistory){
+.controller('HomeCtrl', function($scope, $location, $ionicHistory, Historys){
 	$scope.showComment = false;
 	$scope.showAdd = true;
 	$scope.hideBack = false;
 
 	$scope.like = 10;
 
-	//Mostrar y ocultar comentarios (Aun no funciona completo)
+	$scope.historias = Historys;
 	$scope.showComments = function(){
+	//Mostrar y ocultar comentarios (Aun no funciona completo)
 		$scope.showComment = true;
 	}
 
@@ -31,6 +32,17 @@ angular.module('happ.controllers', [])
 })
 
 //Controlador para agregar una nueva historia
-.controller('HistoriaCtrl', function($scope, $location){
-	$scope.txtHistoria = "";
+.controller('HistoriaCtrl', function($scope, $location, Historys){
+		// $scope.hap = '';
+	$scope.addHistory = function(){
+		console.log('Aqui voy: '+ $scope.hap);
+		$scope.historias.$add({
+			history: $scope.hap,
+			like: 0,
+			share: 0
+		});
+		$scope.hap='';
+	};
+
+
 });

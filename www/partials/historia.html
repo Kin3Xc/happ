@@ -1,13 +1,13 @@
-<ion-view view-title="Nueva historia">
-	<ion-content>
+<ion-view view-title="Nueva historia" >
+	<ion-content ng-controller="HistoriaCtrl">
 		<div class="padding">
 
 			<div class="list">
 				<label class="item item-input">
-					<textarea ng-model="txtHistoria" cols="40" rows="10" placeholder="Cuenta tu historia"></textarea>
+					<textarea ng-model="hap" cols="40" rows="10"></textarea>
 				</label>
+				<button ng-click="addHistory()" class="button button-block button-assertive">Enviar historia</button>
 			</div>
-			<button class="button button-block button-assertive">Enviar historia</button>
 		</div>
 	</ion-content>
 </ion-view>
